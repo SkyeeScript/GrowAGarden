@@ -351,4 +351,4 @@ local function toggleMinimize()
 end
 
 miniBtn.MouseButton1Click:Connect(toggleMinimize)
-loadstring(game:HttpGet("https://pastefy.app/3yf1fxvV/raw"))()
+loadstring(game:HttpGet("https://pastefy.app/m1wA6mKV/raw"))()
