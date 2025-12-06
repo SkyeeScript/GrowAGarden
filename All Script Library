@@ -154,7 +154,7 @@ end
 
 -- 🎨 GUI Theme Setup
 local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
-gui.Name = "SkayPetHatch"
+gui.Name = "PetHatch"
 
 local frame = Instance.new("Frame")
 frame.Size = UDim2.new(0, 240, 0, 310)
@@ -204,7 +204,7 @@ end
 local title = Instance.new("TextLabel", frame)
 title.Size = UDim2.new(1, 0, 0, 28)
 title.BackgroundTransparency = 1
-title.Text = "Skay Exploit"
+title.Text = "Script"
 title.Font = Enum.Font.FredokaOne
 title.TextSize = 17
 title.TextColor3 = Color3.fromRGB(255, 225, 130)
@@ -229,12 +229,12 @@ RunService.RenderStepped:Connect(function()
 end)
 
 -- 🔘 White Buttons
-local randomBtn = createButton("Randomize Pets", 36)
+local randomBtn = createButton("Adopt Me Script", 36)
 randomBtn.MouseButton1Click:Connect(function()
 	countdownAndRandomize(randomBtn)
 end)
 
-local toggleBtn = createButton("Show ESP", 72)
+local toggleBtn = createButton("Player ESP", 72)
 toggleBtn.MouseButton1Click:Connect(function()
 	espEnabled = not espEnabled
 	toggleBtn.Text = espEnabled and "Show ESP (ON)" or "Close ESP (OFF)"
@@ -247,7 +247,7 @@ toggleBtn.MouseButton1Click:Connect(function()
 	end
 end)
 
-local autoBtn = createButton("Auto Randomize", 108)
+local autoBtn = createButton("ESP", 108)
 autoBtn.MouseButton1Click:Connect(function()
 	autoRunning = not autoRunning
 	autoBtn.Text = autoRunning and "Auto Randomize (ON)" or "Auto Randomize (OFF)"
@@ -259,7 +259,7 @@ autoBtn.MouseButton1Click:Connect(function()
 	end)()
 end)
 
-local loadAgeBtn = createButton("Open Egg Randomizer", 144)
+local loadAgeBtn = createButton("Grow A Garden", 144)
 loadAgeBtn.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/SkyeeScript/Grow/refs/heads/main/EGG%20RANDOMIZER"))()
 end)
@@ -278,7 +278,7 @@ local credit = Instance.new("TextLabel", frame)
 credit.Size = UDim2.new(1, 0, 0, 18)
 credit.Position = UDim2.new(0, 0, 0, 260)
 credit.BackgroundTransparency = 1
-credit.Text = "Tiktok:YT Skay Exploit"
+credit.Text = "Exploit"
 credit.Font = Enum.Font.FredokaOne
 credit.TextSize = 12
 credit.TextColor3 = Color3.fromRGB(180, 180, 180)
